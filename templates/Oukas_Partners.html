@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+	<title>Oukas</title>
+	<meta charset='UTF-8'/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+<a href="{{ url_for('home') }}">
+<img class="logo" src="{{url_for('static', filename='images/Oukas_Logo.png')}}"/>
+</a>
+
+<div class="topnav">
+	<a class="applybutton" href="{{ url_for('apply') }}">Apply Now</a>
+	<a href="{{ url_for('about') }}">About Us</a>
+	<a href="#">Services</a>
+	<a href="{{ url_for('partners') }}">Partners</a>
+</div>
+
+<h3 class="partners_slogan">Our Parnters, Providing Opportunities to Students since Day 1.</h3>
+
+<div class="list_partners">
+
+	<div class="CMG">
+
+	<img src="{{url_for('static', filename='images/CMG.jpg')}}" alt="CMG Logo" width="80" height="100" align="right">
+	<p>Chip Mong Group (CMG): <span style="color:#A7BE89">Supported over 200 students</span></p>
+	<p>One of the largest diversified groups in Cambodia with businesses ranging from property<br>
+		development, beer and beverages, to manufacturing and distribution of building materials,<br>
+		concrete, and cement.</p>
+	</div>
+
+	<div class="AEON">
+
+	<img class="AEON_logo" src="{{url_for('static', filename='images/AEON.jpg')}}" alt="AEON Logo" width="160" height="100" align="right">
+	<p>ÆON Group or AEON Group: <span style="color:#A7BE89">Supported over 150 students</span></p>
+	<p>A group of retail and financial services companies based in Chiba, Japan, which is centered<br>on ÆON Co., Ltd.</p>
+	</div>
+
+	<div class="PH">
+
+	<img class="PH_logo" src="{{url_for('static', filename='images/PH.jpg')}}" alt="PH Logo" width="100" height="100" align="right">
+	<p>Borey Peng Huoth (PH): <span style="color:#A7BE89">Supported over 50 students</span></p>
+	<p>Founded in 2005 and becomes one of the most prominent Property Development<br>companies in Cambodia today. 
+		With our vast expertise in the market, ambition to grow<br>further and a constant drive for innovation,
+		Borey Peng Huoth has been transformed to<br>Borey Peng Huoth Group, which consists of Borey Peng Huoth Property Development<br>
+		Borey Peng Huoth Construction, and Borey Peng Huoth Shopping Mall.</p>
+
+	</div>
+</div>
+
+<button onclick="window.location.href='{{ url_for('apply') }}'" class="partner_button">Become a Partner</button>
+
+<div class="HIW">
+
+	<h3 class="HPI">How Partners invest:</h3>
+
+	<p class="HPI_description">Partners invest in individual students. The amount of investment is dependent on<br> the number of students the partner wants to support.</p>
+
+	<p class="Percentage">+ ~10% extra for service fee</p>
+
+</div>
+
+
+<div class="HIW_Partners">
+
+<p>Partners</p>
+<li>Enhance Brand Reputation,<br>Loyalty, and credibility</li>
+<li>Awareness and visibility</li>
+<li>New generations of skilled<br>employees with a fresh mindset</li>
+<li>Investments back</li>
+
+</div>
+
+
+<div class="HIW_Students">
+<p>Students</p>
+<li>Hgher level education</li>
+<li>Job with the supported partner</li>
+</div>
+
+</body>
+</html>

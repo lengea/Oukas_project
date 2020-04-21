@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+	<title>Oukas</title>
+	<meta charset='UTF-8'/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+<div class="">
+<form method="POST" action="">
+	{{ form.hideen_tag() }}
+	<fieldset class="">
+		<legend class="">Join Today</legend>
+		<div class="">
+			{{ form.username.label(class="") }}
+			{{ form.username(class="") }}
+		</div>
+		<div class="">
+			{{ form.email.label(class="") }}
+			{{ form.email(class="") }}
+		</div>
+		<div class="">
+			{{ form.password.label(class="") }}
+			{{ form.password(class="") }}
+		</div>
+		<div class="">
+			{{ form.confirm_password.label(class="") }}
+			{{ form.confirm_password(class="") }}
+		</div>
+	</fieldset>
+	<div class="")>
+	{{ form.submit(class="") }}
+	</div>
+</form>
+</div>
+<div class="">
+	<small class="">
+		Already Have An Account? <a class="" href="{{url_for('login')}}">Sign In</a>
+ 
+	</small>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+	<title>Oukas</title>
+	<meta charset='UTF-8'/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+<a href="{{ url_for('home') }}">
+<img class="logo" src="{{url_for('static', filename='images/Oukas_Logo.png')}}"/>
+</a>
+
+<div class="topnav">
+	<a class="applybutton" href="{{ url_for('apply') }}">Apply Now</a>
+	<a href="{{ url_for('about') }}">About Us</a>
+	<a href="#">Services</a>
+	<a href="{{ url_for('partners') }}">Partners</a>
+</div>
+
+	<div class="home1">
+
+<img class="students" src="{{url_for('static', filename='images/students.jpg')}}"/>
+
+<div class="description">
+<h2 class="slogan"> Finance your studies now,<br> pay back when you <br> graduate and get a job.</h2>
+<p> We finance your tuition fees with the<br>
+	help form our partners. After graduating,<br>
+	you work for the supporting partner and pay <br>
+	back a percentage of your income for a set <br>
+	period of time. </p>
+</div>
+
+<button class="applybutton" onclick="window.location.href='{{ url_for('apply') }}'">Apply Now</button>
+
+	</div>
+
+<div class="partners">
+
+	<h3>Partners</h3>
+
+	<img src="{{url_for('static', filename='images/CMG.jpg')}}" alt="CMG Logo" width="100" height="120"/>
+	<img src="{{url_for('static', filename='images/PH.jpg')}}" alt="PH Logo" width="120" height="120">
+	<img src="{{url_for('static', filename='images/AEON.jpg')}}" alt="AEON Logo" width="180" height="120">
+
+</div>
+
+<div class="home2">
+
+<img class="graduate" src="{{url_for('static', filename='images/graduate.jpg')}}"/>
+
+	<div class="description2">
+
+<h2>We believe every student should have<br>
+	the right to focus on their studies,<br> not their finance.</h2>
+
+<h3>Study now, Pay later Model</h3>
+
+<p>With our model, students can focus on their studies<br>
+	while we and our partners take care of the tuition fees.<br>
+	Once the student graduates, he/she will work for their<br>
+	supported partner for a set period of time until the<br>
+	tuition fee is paid back in full.</p>
+
+<p>Students have the options to repay from 10% to 50%<br>
+of their monthly salary to best suit their needs.</p>
+
+	</div>
+</div>
+
+
+<div class="HIW_students">
+
+<h3>How it works:</h3>
+
+	<div class="Raksa">
+<img class="Raksa_img" src="{{url_for('static', filename='images/Raksa.png')}}"/>
+<p class="name"><b>Raksa Sok</b></p>
+
+<p>
+<b>Background:</b><br>
+	Age: 19<br>
+	Occupation: Student<br>
+</p>
+
+<p>
+<b>Context:</b><br>
+Just graduated from<br> high-school
+and currently looking<br> for a university.
+</p>
+
+	</div>
+</div>
+
+<p class="HIW_description">
+
+<b>Situation:</b> Raksa wants to complete her higher-level education.<br>
+
+<b>Problem:</b> Her family cannot afford to pay for her tuition fees and do not want to risk of<br>
+
+losing their home for a loan.<br>
+
+<b>Solution:</b> Oukas (Study now, Pay later Model)<br>
+
+Raksa takes a loan of $2500 to complete her 4 years study in accounting supported by CMG (partner)<br>
+
+4 years later (after graduating), Raksa goes and work for CMG with a monthly salary of $350<br>
+
+<b>Repayment option:</b> 50% cut from her monthly income<br>
+
+<b>Repayment plan:</b> $175 per month back to CMG for a duration of 14 months.
+
+</p>
+
+</div>
+
+<div class="repayment">
+
+<h1>Let's check the repayment model!</h1>
+<p>Drag the slider to display your desired fund.</p>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
+
+</div>
+
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+<!---
+<div class='footer'>
+	<p>Footer</p>
+</div>
+--->
+
+</body>
+</html>

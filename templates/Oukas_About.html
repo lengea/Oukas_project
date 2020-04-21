@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+	<title>Oukas</title>
+	<meta charset='UTF-8'/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+<a href="{{ url_for('home') }}">
+<img class="logo" src="{{url_for('static', filename='images/Oukas_Logo.png')}}"/>
+</a>
+
+<div class="topnav">
+	<a class="applybutton" href="{{ url_for('apply') }}">Apply Now</a>
+	<a href="{{ url_for('about') }}">About Us</a>
+	<a href="#">Services</a>
+	<a href="{{ url_for('partners') }}">Partners</a>
+</div>
+
+<div class="about">
+
+<img class="Boy_buffalo" src="{{url_for('static', filename='images/Boy_buffalo.png')}}" alt="Boy on a buffalo holding a book"/>
+
+<p>Oukas is a service provider for Cambodian Students studying<br>
+	in Phnom Penh.  With the help from our partners, we ensure<br>
+	students within our service receive full loan funds for their<br>
+	tuition fees to best optimize their education.<br>
+
+	Som Sva kom!
+</p>
+
+</div>
+
+
+</body>
+</html>
